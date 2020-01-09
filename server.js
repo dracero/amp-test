@@ -13,8 +13,8 @@ app.use(express.static("public"));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
-  //response.sendFile(__dirname + "/views/index.html");//esto si queremos servir un archivo desde el mismo server
-  response.redirect("https://amp-test2.herokuapp.com/blog.amp.html");//esto para servir un archivo cualquiera 
+  response.sendFile(__dirname + "/blog.amp.html");//esto si queremos servir un archivo desde el mismo server
+  //response.redirect("https://amp-test2.herokuapp.com/blog.amp.html");//esto para servir un archivo cualquiera 
   //hay que guardar el código en GitHub y conectarlo en Heroku, finalmente lo que ponemos en el redirect es Heroku
 });
 
